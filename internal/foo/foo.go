@@ -9,7 +9,14 @@ import (
 func doFunkyStuff(test bar.BarInterface) {
 	// UB doesn't trigger if this print isn't here:
 	fmt.Printf("Test\n")
-	test.UnmarshalJsonIntoB(`{"json_field":"test"}`)
+
+	/*
+	 * Toggle the following to see broken vs working behaviour:
+	 */
+
+	test.UnmarshalBroken(`{"json_field":"test"}`)
+	// test.UnmarshalWorking(`{"json_field":"test"}`)
+
 	return
 }
 
