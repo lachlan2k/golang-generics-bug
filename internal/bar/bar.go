@@ -11,7 +11,7 @@ type template[TypeA any, TypeB any] struct {
 	B TypeB
 }
 
-type Specialisation struct {
+type ConcreteStruct struct {
 	template[struct{}, struct {
 		JsonField string `json:"json_field"`
 	}]

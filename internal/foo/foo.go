@@ -21,7 +21,7 @@ func doFunkyStuff(test bar.BarInterface) {
 }
 
 func TriggerUB() {
-	var test bar.Specialisation
+	var test bar.ConcreteStruct
 	doFunkyStuff(&test)
 
 	return
