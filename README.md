@@ -1,3 +1,5 @@
+See: https://github.com/golang/go/issues/50621
+
 ```
 $ go version
 
